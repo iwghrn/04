@@ -2,12 +2,21 @@
 
 int main(void)
 {
-    int year;
-    
-    printf("input the year :");
-    scanf("%i", &year);
+    unsigned int x;
+    int b;
 
-    printf("is the year %i the leap year? : %i\n", year, ((year%4==0)&&(year%100!=0))||(year%400==0));
+    printf("input a number : ");
+    scanf("%ui", &x);
+
+    for (b=0; x != 0; x >>= 1)
+    {
+        if (x & 1)
+        {
+            b++;
+        }
+    }
+
+    printf("The result is : %i\n", b);
 
     return 0;
 }
