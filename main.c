@@ -2,27 +2,12 @@
 
 int main(void)
 {
-    int op1, op2;
-    int result;   //result 안쓰고 수식넣어도됨
+    int sec;
+    
+    printf("input the second :");
+    scanf("%i", &sec);
 
-    printf("input two integers:");
-    scanf("%i %i", &op1, &op2);
-
-    result = op1 + op2;
-    printf("%i + %i = %i\n", op1, op2, result);
-
-    result = op1 - op2;
-    printf("%i - %i = %i\n", op1, op2, result);
-
-    result = op1 * op2;
-    printf("%i * %i = %i\n", op1, op2, result);
-
-    result = op1 / op2;
-    printf("%i / %i = %i\n", op1, op2, result);
-
-    result = op1 % op2;
-    printf("%i %% %i = %i\n", op1, op2, result);
-    //%를 출력하려면 그냥 %만 쓰면 안되고 %%써야댐
+    printf("the time is %i : %i\n", sec/60, sec%60);
 
     return 0;
 }
