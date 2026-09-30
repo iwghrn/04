@@ -2,16 +2,27 @@
 
 int main(void)
 {
-    int x, y, z, m;
-    int a, b, c;
-    x = 2;
-    z = 1;
-    a = 3;
-    b = 4;
-    c = 5;
+    int op1, op2;
+    int result;   //result 안쓰고 수식넣어도됨
 
-    y = a*x*x + b*x + c;
-    m = (x + y + z) / 3;
+    printf("input two integers:");
+    scanf("%i %i", &op1, &op2);
 
-    printf("y=%d, m=%d\n", y, m);
+    result = op1 + op2;
+    printf("%i + %i = %i\n", op1, op2, result);
+
+    result = op1 - op2;
+    printf("%i - %i = %i\n", op1, op2, result);
+
+    result = op1 * op2;
+    printf("%i * %i = %i\n", op1, op2, result);
+
+    result = op1 / op2;
+    printf("%i / %i = %i\n", op1, op2, result);
+
+    result = op1 % op2;
+    printf("%i %% %i = %i\n", op1, op2, result);
+    //%를 출력하려면 그냥 %만 쓰면 안되고 %%써야댐
+
+    return 0;
 }
